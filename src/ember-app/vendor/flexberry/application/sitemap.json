@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "I s s32",
+  "applicationTitle": "I s s32",
+  "items": [
+    {
+      "link": null,
+      "menuName": "i-s-s32",
+      "caption": "ISS32",
+      "title": "ISS32",
+      "children": [
+        {
+          "link": "i-i-s-i-s-s32-investment-l",
+          "menuName": null,
+          "caption": "Investment",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s32-form-l",
+          "menuName": null,
+          "caption": "Form",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s32-size-l",
+          "menuName": null,
+          "caption": "Size",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-s-s32-support-l",
+          "menuName": null,
+          "caption": "Support",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

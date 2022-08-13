@@ -1,0 +1,38 @@
+﻿{
+  "name": "IISISS32ListSize",
+  "modelName": "i-i-s-i-s-s32-list-size",
+  "className": "ListSize",
+  "nameSpace": "IIS.ISS32",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "size",
+      "relatedTo": "i-i-s-i-s-s32-size",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "support",
+      "relatedTo": "i-i-s-i-s-s32-support",
+      "inverse": "listSize"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ListSizeE",
+      "modelName": "i-i-s-i-s-s32-list-size",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

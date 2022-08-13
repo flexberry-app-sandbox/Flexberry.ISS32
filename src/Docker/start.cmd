@@ -1,0 +1,1 @@
+docker-compose -p iss32 up -d

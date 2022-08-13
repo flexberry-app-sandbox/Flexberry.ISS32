@@ -1,0 +1,38 @@
+﻿{
+  "name": "IISISS32ListInv",
+  "modelName": "i-i-s-i-s-s32-list-inv",
+  "className": "ListInv",
+  "nameSpace": "IIS.ISS32",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "investment",
+      "relatedTo": "i-i-s-i-s-s32-investment",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "support",
+      "relatedTo": "i-i-s-i-s-s32-support",
+      "inverse": "listInv"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ListInvE",
+      "modelName": "i-i-s-i-s-s32-list-inv",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

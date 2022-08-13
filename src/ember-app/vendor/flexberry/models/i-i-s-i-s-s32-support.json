@@ -1,0 +1,94 @@
+﻿{
+  "name": "IISISS32Support",
+  "modelName": "i-i-s-i-s-s32-support",
+  "className": "Support",
+  "nameSpace": "IIS.ISS32",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "form",
+      "relatedTo": "i-i-s-i-s-s32-form",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "listInv",
+      "relatedTo": "i-i-s-i-s-s32-list-inv",
+      "inverse": "support"
+    },
+    {
+      "name": "listSize",
+      "relatedTo": "i-i-s-i-s-s32-list-size",
+      "inverse": "support"
+    }
+  ],
+  "projections": [
+    {
+      "name": "SupportE",
+      "modelName": "i-i-s-i-s-s32-support",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "SupportL",
+      "modelName": "i-i-s-i-s-s32-support",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
